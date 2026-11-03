@@ -1,0 +1,8 @@
+.venv/
+work/
+*.pyc
+# Kept local: maker names, photos and how-to notes
+print/plan.json
+print/results/
+RUNBOOK.md
+prompts/
