@@ -2,13 +2,16 @@
 
 Icons for tools and shop things, drawn to read on a label. 123 solid silhouettes, from circular saws and drill bits to pliers, clamps and a work van, each on a 24 × 24 box and tested at label sizes down to 10 mm.
 
-Part of the WOODWERD Toolkit. Status: x0.0.1, local build, not yet published.
+Part of the WOODWERD Toolkit. Status: x0.0.2, public beta.
+
+**Browse the icons:** [woodwerd.github.io/icon-ctrl](https://woodwerd.github.io/icon-ctrl/). Search them, see each one at label size beside its family, and download it. To ask for a new one, use [Request an icon](https://github.com/WOODWERD/icon-ctrl/issues/new?template=request-an-icon.yml).
 
 - Every icon is one filled path, drawn with the even-odd rule, in a single ink.
 - Families with variants that read apart at small size: seven sanders, eight drills and drivers, three extractors, three screwdrivers, three pliers and more.
 - `dist/print/icons.js` is a drop-in module for Box Ctrl and Tool Ctrl: `ICONS`, `ICON_GROUPS`, `searchIcons`, and `FALLBACK`, which maps a variant to its family.
 - `dist/print/svg/` holds one SVG per icon. `dist/print/png/` holds PNGs at 22.7 mm and 10 mm at 300 dpi, and 10 mm at 203 dpi for thermal label printers.
-- `print/icons.json` is the record of every icon: key, name, group, family and search words.
+- `print/icons.json` is the record of every icon: key, name, group, family, search words, telling feature, and the versions it was added and last changed in.
+- `site/` is the gallery. It reads `icons.js` and `icons.json` from the same release.
 
 ## About these icons
 

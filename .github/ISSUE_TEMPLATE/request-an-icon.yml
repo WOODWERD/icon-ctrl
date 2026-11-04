@@ -1,0 +1,34 @@
+name: Request an icon
+description: Ask for an icon for a tool or shop thing that isn't in the set yet.
+title: "Icon: "
+labels: ["icon request"]
+body:
+  - type: input
+    id: thing
+    attributes:
+      label: What is it?
+      description: The kind of tool or thing, in plain words. No brand or model names, please.
+      placeholder: Track saw rail clamp
+    validations:
+      required: true
+  - type: textarea
+    id: looks
+    attributes:
+      label: What makes it look like itself?
+      description: The shape someone would know it by at a glance.
+      placeholder: A flat bar with a screw handle at one end that slides into the rail's slot.
+  - type: input
+    id: closest
+    attributes:
+      label: Closest icon in the set, if any
+      description: Its key from the gallery, such as clamp or guide-rail.
+  - type: dropdown
+    id: use
+    attributes:
+      label: Where will you use it?
+      multiple: true
+      options:
+        - Box Ctrl labels
+        - Tool Ctrl
+        - Stack Ctrl
+        - Something else

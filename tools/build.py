@@ -5,6 +5,7 @@
 Reads print/plan.json, print/results/*.json and print/<key>.svg (all kept
 local), and writes the public files:
   print/icons.json            the record of every icon, no maker details
+  site/                       the gallery reads icons.js and icons.json; the Pages workflow copies them in
   dist/print/icons.js         Box Ctrl's module shape, with filled paths
   dist/print/svg/<key>.svg    one flat SVG per icon on the 24-unit box
   dist/print/png/<size>/      300 dpi at 22.7 and 10 mm, 203 dpi at 10 mm
@@ -61,6 +62,16 @@ def flatten(svg):
     return ''.join(out)
 
 
+def feature_of(r):
+    """The telling feature for the public record: the private sheet's shared sentence, refused if it names a maker (IC-R05)."""
+    s = (r.get('shared') or '').strip().rstrip('.')
+    names = {m.get('maker', '') for m in r.get('makers', [])} | TRADEMARKS
+    hit = [n for n in names if n and re.search(rf'\b{re.escape(n)}\b', s, re.I)]
+    if hit:
+        sys.exit(f"{r['key']}: telling feature names {hit}")
+    return s[:1].upper() + s[1:]
+
+
 def png(svg_path, px, bits, dst):
     with tempfile.TemporaryDirectory() as tmp:
         subprocess.run(['qlmanage', '-t', '-s', str(px * 4), '-o', tmp, svg_path], capture_output=True, check=True)
@@ -81,6 +92,14 @@ def png(svg_path, px, bits, dst):
 def main(version):
     plan = json.load(open(os.path.join(ROOT, 'print/plan.json')))['icons']
     dist = os.path.join(ROOT, 'dist/print')
+    # Keep each icon's history: added stays, changed moves only when its drawing does.
+    rec_path = os.path.join(ROOT, 'print/icons.json')
+    before = {i['key']: i for i in json.load(open(rec_path))['icons']} if os.path.exists(rec_path) else {}
+    old_svg = {}
+    for k in before:
+        sp = os.path.join(dist, 'svg', k + '.svg')
+        if os.path.exists(sp):
+            old_svg[k] = open(sp).read()
     shutil.rmtree(dist, ignore_errors=True)
     for sub in ['svg'] + [f'png/{name}' for name, _, _ in PNGS]:
         os.makedirs(os.path.join(dist, sub))
@@ -99,10 +118,13 @@ def main(version):
         for name, px, bits in PNGS:
             png(sp, px, bits, os.path.join(dist, 'png', name, p['key'] + '.png'))
         # Trademarked product names stay out of the set (IC-R05).
+        feature = feature_of(r)
         words = ' '.join(w for w in dict.fromkeys(f"{p['name']} {p['words']} {p['family'].replace('-', ' ')}".lower().split()) if w not in TRADEMARKS)
         icons[p['key']] = dict(key=p['key'], name=p['name'], group=p['group'], family=p['family'], words=words, f=path)
-        records.append(dict(key=p['key'], name=p['name'], set='print', group=p['group'], family=p['family'], words=words,
-                            status='approved', approved=r.get('approved'), added=version, changed=version, licence='MIT'))
+        was = before.get(p['key'], {})
+        changed = was.get('changed', version) if old_svg.get(p['key']) == svg else version
+        records.append(dict(key=p['key'], name=p['name'], set='print', group=p['group'], family=p['family'], words=words, feature=feature,
+                            status='approved', approved=r.get('approved'), added=was.get('added', version), changed=changed, licence='MIT'))
     json.dump(dict(version=version, icons=records), open(os.path.join(ROOT, 'print/icons.json'), 'w'), indent=1)
     fallback = {k: i['family'] for k, i in icons.items() if i['family'] != k and i['family'] in icons}
     json.dump(fallback, open(os.path.join(dist, 'fallback.json'), 'w'), indent=1)
