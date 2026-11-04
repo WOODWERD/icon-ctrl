@@ -1,5 +1,5 @@
 {
- "version": "x0.0.3",
+ "version": "x0.0.4",
  "icons": [
   {
    "key": "circular-saw",
@@ -1735,6 +1735,76 @@
    "approved": "2026-11-04",
    "added": "x0.0.3",
    "changed": "x0.0.3",
+   "licence": "MIT"
+  },
+  {
+   "key": "hot-air-station",
+   "name": "Hot air station",
+   "set": "print",
+   "group": "Electronics",
+   "family": "hot-air-station",
+   "words": "hot air station rework smd",
+   "feature": "A squarish bench box with a display window on its front panel, and a slim pen-shaped handpiece with a round metal nozzle, joined to the box by one thick hose",
+   "status": "approved",
+   "approved": "2026-11-04",
+   "added": "x0.0.4",
+   "changed": "x0.0.4",
+   "licence": "MIT"
+  },
+  {
+   "key": "usb-cable",
+   "name": "USB cable",
+   "set": "print",
+   "group": "Electronics",
+   "family": "usb-cable",
+   "words": "usb cable lead programmer",
+   "feature": "One loose round loop of thick cable with a short straight tail at each end, each tail ending in a flat rectangular plug with a small metal tip; the two plugs stand side by side above the loop",
+   "status": "approved",
+   "approved": "2026-11-04",
+   "added": "x0.0.4",
+   "changed": "x0.0.4",
+   "licence": "MIT"
+  },
+  {
+   "key": "soldering-iron",
+   "name": "Soldering iron",
+   "set": "print",
+   "group": "Electronics",
+   "family": "soldering-iron",
+   "words": "soldering iron solder flux",
+   "feature": "A long straight pen shape: a fine pointed tip on a thin metal barrel, a short collar, then a much thicker rounded grip that tapers toward the back end",
+   "status": "approved",
+   "approved": "2026-11-04",
+   "added": "x0.0.4",
+   "changed": "x0.0.4",
+   "licence": "MIT"
+  },
+  {
+   "key": "dev-board",
+   "name": "Dev board",
+   "set": "print",
+   "group": "Electronics",
+   "family": "dev-board",
+   "words": "dev board microcontroller module",
+   "feature": "A long narrow rectangular circuit board with a row of pins along each long edge, a square module or chip near one end and a small USB port at the other short end",
+   "status": "approved",
+   "approved": "2026-11-04",
+   "added": "x0.0.4",
+   "changed": "x0.0.4",
+   "licence": "MIT"
+  },
+  {
+   "key": "wire-spool",
+   "name": "Wire spool",
+   "set": "print",
+   "group": "Electronics",
+   "family": "wire-spool",
+   "words": "wire spool hookup",
+   "feature": "A short wide drum of tightly wound wire held between two thin flat round flanges that stick out past the winding, with the hollow centre showing in the top flange and one loose wire end trailing off the side",
+   "status": "approved",
+   "approved": "2026-11-04",
+   "added": "x0.0.4",
+   "changed": "x0.0.4",
    "licence": "MIT"
   }
  ]

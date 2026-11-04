@@ -2,6 +2,10 @@
 
 What changed in each version of Icon Ctrl, newest first. Versions are x-numbers while Icon Ctrl is a public beta.
 
+## x0.0.4 · 2026-11-04
+- A new Electronics group with five icons for the electronics bench: Dev board (`dev-board`), Hot air station (`hot-air-station`), Soldering iron (`soldering-iron`), USB cable (`usb-cable`) and Wire spool (`wire-spool`).
+- The set now has 129 icons. No icons changed or withdrawn.
+
 ## x0.0.3 · 2026-11-04
 - Added Large joiner (`joiner-large`), the first variant of the joiner family: the big loose-tenon joiner with its round knob and tall fence. An app that doesn't know it shows the joiner icon.
 - The set now has 124 icons. No icons changed or withdrawn.

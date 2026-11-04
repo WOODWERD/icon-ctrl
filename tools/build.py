@@ -22,7 +22,7 @@ from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GROUPS = ['Power, cutting', 'Power, shaping', 'Power, drill and drive', 'Shop and site', 'Plumbing and electrical',
-          'Test and measure', 'Outdoor', 'Hand tools', 'Consumables', 'Kits', 'Shop places']
+          'Test and measure', 'Electronics', 'Outdoor', 'Hand tools', 'Consumables', 'Kits', 'Shop places']
 TRADEMARKS = {'domino', 'rotex', 'systainer', 'sortainer', 'packout', 'tstak', 'quick-grip'}
 PNGS = [('22.7mm-300dpi', 268, False), ('10mm-300dpi', 118, False), ('10mm-203dpi', 80, True)]
 NOTICE = open(os.path.join(ROOT, 'NOTICE.md')).read().split('\n', 2)[2].strip()
