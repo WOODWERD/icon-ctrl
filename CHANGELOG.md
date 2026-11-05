@@ -2,6 +2,11 @@
 
 What changed in each version of Icon Ctrl, newest first. Versions are x-numbers while Icon Ctrl is a public beta.
 
+## x0.0.5 · 2026-11-04
+- Four more Electronics icons: Resistor (`resistor`), Chip (`chip`), Connector (`connector`) and Breadboard (`breadboard`).
+- A new Desk group with Pen (`pen`) and Folder (`folder`).
+- The set now has 135 icons. No icons changed or withdrawn.
+
 ## x0.0.4 · 2026-11-04
 - A new Electronics group with five icons for the electronics bench: Dev board (`dev-board`), Hot air station (`hot-air-station`), Soldering iron (`soldering-iron`), USB cable (`usb-cable`) and Wire spool (`wire-spool`).
 - The set now has 129 icons. No icons changed or withdrawn.

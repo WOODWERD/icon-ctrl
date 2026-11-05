@@ -1,5 +1,5 @@
 {
- "version": "x0.0.4",
+ "version": "x0.0.5",
  "icons": [
   {
    "key": "circular-saw",
@@ -1780,6 +1780,34 @@
    "licence": "MIT"
   },
   {
+   "key": "resistor",
+   "name": "Resistor",
+   "set": "print",
+   "group": "Electronics",
+   "family": "resistor",
+   "words": "resistor passives capacitor",
+   "feature": "A small rounded cylindrical body with slightly swollen ends and three or four bands around it, and one long straight wire lead coming out of the centre of each end",
+   "status": "approved",
+   "approved": "2026-11-04",
+   "added": "x0.0.5",
+   "changed": "x0.0.5",
+   "licence": "MIT"
+  },
+  {
+   "key": "chip",
+   "name": "Chip",
+   "set": "print",
+   "group": "Electronics",
+   "family": "chip",
+   "words": "chip ic semiconductor transistor",
+   "feature": "A flat black rectangular block with a small half-round notch in one short end, and a row of evenly spaced flat metal legs along each long side, each leg bending straight down",
+   "status": "approved",
+   "approved": "2026-11-04",
+   "added": "x0.0.5",
+   "changed": "x0.0.5",
+   "licence": "MIT"
+  },
+  {
    "key": "dev-board",
    "name": "Dev board",
    "set": "print",
@@ -1794,6 +1822,20 @@
    "licence": "MIT"
   },
   {
+   "key": "connector",
+   "name": "Connector",
+   "set": "print",
+   "group": "Electronics",
+   "family": "connector",
+   "words": "connector header plug terminal",
+   "feature": "A small boxy plastic plug housing with a row of square openings in its front face, and several wires side by side coming out of the back of the housing",
+   "status": "approved",
+   "approved": "2026-11-04",
+   "added": "x0.0.5",
+   "changed": "x0.0.5",
+   "licence": "MIT"
+  },
+  {
    "key": "wire-spool",
    "name": "Wire spool",
    "set": "print",
@@ -1805,6 +1847,48 @@
    "approved": "2026-11-04",
    "added": "x0.0.4",
    "changed": "x0.0.4",
+   "licence": "MIT"
+  },
+  {
+   "key": "breadboard",
+   "name": "Breadboard",
+   "set": "print",
+   "group": "Electronics",
+   "family": "breadboard",
+   "words": "breadboard proto perfboard",
+   "feature": "A long flat rectangular slab with a grid of small square holes in rows, a narrow channel running down the middle of its length, and a strip of holes along each long edge",
+   "status": "approved",
+   "approved": "2026-11-04",
+   "added": "x0.0.5",
+   "changed": "x0.0.5",
+   "licence": "MIT"
+  },
+  {
+   "key": "pen",
+   "name": "Pen",
+   "set": "print",
+   "group": "Desk",
+   "family": "pen",
+   "words": "pen pencil marker",
+   "feature": "A long thin straight cylinder with a pointed cone tip at one end, a small push button at the other end, and a flat pocket clip running along the barrel from the button end",
+   "status": "approved",
+   "approved": "2026-11-04",
+   "added": "x0.0.5",
+   "changed": "x0.0.5",
+   "licence": "MIT"
+  },
+  {
+   "key": "folder",
+   "name": "Folder",
+   "set": "print",
+   "group": "Desk",
+   "family": "folder",
+   "words": "folder file documents",
+   "feature": "A folded sheet seen from the front: a flat rectangular front panel slightly lower than the back panel, the back panel rising into one raised tab with rounded corners along its top edge, the two panels joined along the bottom fold",
+   "status": "approved",
+   "approved": "2026-11-04",
+   "added": "x0.0.5",
+   "changed": "x0.0.5",
    "licence": "MIT"
   }
  ]
