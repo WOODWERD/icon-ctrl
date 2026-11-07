@@ -2,6 +2,10 @@
 
 What changed in each version of Icon Ctrl, newest first. Versions are x-numbers while Icon Ctrl is a public beta.
 
+## x0.0.6 · 2026-11-06
+- Added Helping hands (`helping-hands`) to Electronics: a weighted base with four flexible arms whose clips meet over the middle.
+- The set now has 136 icons. No icons changed or withdrawn.
+
 ## x0.0.5 · 2026-11-04
 - Four more Electronics icons: Resistor (`resistor`), Chip (`chip`), Connector (`connector`) and Breadboard (`breadboard`).
 - A new Desk group with Pen (`pen`) and Folder (`folder`).

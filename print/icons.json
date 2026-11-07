@@ -1,5 +1,5 @@
 {
- "version": "x0.0.5",
+ "version": "x0.0.6",
  "icons": [
   {
    "key": "circular-saw",
@@ -1861,6 +1861,20 @@
    "approved": "2026-11-04",
    "added": "x0.0.5",
    "changed": "x0.0.5",
+   "licence": "MIT"
+  },
+  {
+   "key": "helping-hands",
+   "name": "Helping hands",
+   "set": "print",
+   "group": "Electronics",
+   "family": "helping-hands",
+   "words": "helping hands third hand soldering clip stand",
+   "feature": "Four flexible arms rising from the corners of one heavy flat base, curving up and in so the small alligator clips at their tips meet over the middle of the base",
+   "status": "approved",
+   "approved": "2026-11-06",
+   "added": "x0.0.6",
+   "changed": "x0.0.6",
    "licence": "MIT"
   },
   {
