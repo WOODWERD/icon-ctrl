@@ -9,6 +9,10 @@
  "screw-gun": "drill",
  "mixer": "drill",
  "charger": "battery",
+ "screw-machine": "screw",
+ "screw-self-drilling": "screw",
+ "tape-electrical": "tape",
+ "tape-double-sided": "tape",
  "sander-geared": "sander",
  "sander-linear": "sander",
  "extractor-box": "extractor",
@@ -30,5 +34,8 @@
  "clamp-quick": "clamp",
  "handsaw-pull": "handsaw",
  "joiner-large": "joiner",
+ "screw-lag": "screw",
+ "screw-drywall": "screw",
+ "tape-duct": "tape",
  "filament-reel": "filament-spool"
 }

@@ -119,7 +119,11 @@ def main(version):
             png(sp, px, bits, os.path.join(dist, 'png', name, p['key'] + '.png'))
         # Trademarked product names stay out of the set (IC-R05).
         feature = feature_of(r)
-        words = ' '.join(w for w in dict.fromkeys(f"{p['name']} {p['words']} {p['family'].replace('-', ' ')}".lower().split()) if w not in TRADEMARKS)
+        # A family icon also answers to the words of keys merged into it, so "duct" still finds tape.
+        merged = ' '.join(m['words'] for m in plan if m['family'] == p['key'] and m['key'] != p['key']
+                          and os.path.exists(os.path.join(ROOT, 'print/results', m['key'] + '.json'))
+                          and json.load(open(os.path.join(ROOT, 'print/results', m['key'] + '.json'))).get('status') == 'merged')
+        words = ' '.join(w for w in dict.fromkeys(f"{p['name']} {p['words']} {p['family'].replace('-', ' ')} {merged}".lower().split()) if w not in TRADEMARKS)
         icons[p['key']] = dict(key=p['key'], name=p['name'], group=p['group'], family=p['family'], words=words, f=path)
         was = before.get(p['key'], {})
         changed = was.get('changed', version) if old_svg.get(p['key']) == svg else version

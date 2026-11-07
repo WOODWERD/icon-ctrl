@@ -2,6 +2,11 @@
 
 What changed in each version of Icon Ctrl, newest first. Versions are x-numbers while Icon Ctrl is a public beta.
 
+## x0.0.8 · 2026-11-06
+- Four new variants. Tape gains Electrical tape (`tape-electrical`) and Double-sided tape (`tape-double-sided`). Screw gains Machine screw (`screw-machine`) and Self-drilling screw (`screw-self-drilling`).
+- Duct tape, lag screws and drywall screws looked too much like their family at label size, so `tape-duct`, `screw-lag` and `screw-drywall` fall back to Tape and Screw, and searching "duct", "lag" or "drywall" finds them.
+- The set now has 155 icons. No icons changed or withdrawn.
+
 ## x0.0.7 · 2026-11-06
 - The first Simple icons: everyday things whose shape is the same from every maker, drawn from a written description in the set's style instead of from makers' photos. The notice says so.
 - Desk gains Paper (`paper`), Notebook (`notebook`), Envelope (`envelope`), Sticky notes (`sticky-notes`), Paper clip (`paper-clip`), Binder (`binder`), Label roll (`label-roll`) and Ink bottle (`ink-bottle`).
