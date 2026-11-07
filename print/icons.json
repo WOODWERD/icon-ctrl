@@ -1,5 +1,5 @@
 {
- "version": "x0.0.8",
+ "version": "x0.0.9",
  "icons": [
   {
    "key": "circular-saw",
@@ -2113,6 +2113,62 @@
    "approved": "2026-11-06",
    "added": "x0.0.7",
    "changed": "x0.0.7",
+   "licence": "MIT"
+  },
+  {
+   "key": "printer",
+   "name": "Printer",
+   "set": "print",
+   "group": "Desk",
+   "family": "printer",
+   "words": "printer inkjet laser",
+   "feature": "A low, wide box with a flat lid on top, a dark slot across the front where a sheet of paper comes out onto a short tray, and a small control panel on the front",
+   "status": "approved",
+   "approved": "2026-11-07",
+   "added": "x0.0.9",
+   "changed": "x0.0.9",
+   "licence": "MIT"
+  },
+  {
+   "key": "label-printer",
+   "name": "Label printer",
+   "set": "print",
+   "group": "Desk",
+   "family": "label-printer",
+   "words": "label printer thermal",
+   "feature": "A small closed box holding a label roll inside, with a narrow slot across the front where one label comes out",
+   "status": "approved",
+   "approved": "2026-11-07",
+   "added": "x0.0.9",
+   "changed": "x0.0.9",
+   "licence": "MIT"
+  },
+  {
+   "key": "3d-printer",
+   "name": "3D printer",
+   "set": "print",
+   "group": "Desk",
+   "family": "3d-printer",
+   "words": "3d printer filament",
+   "feature": "An open upright square frame with the print head on a horizontal crossbar, over a flat square build plate on a low base, with no enclosure",
+   "status": "approved",
+   "approved": "2026-11-07",
+   "added": "x0.0.9",
+   "changed": "x0.0.9",
+   "licence": "MIT"
+  },
+  {
+   "key": "toner-cartridge",
+   "name": "Toner cartridge",
+   "set": "print",
+   "group": "Desk",
+   "family": "toner-cartridge",
+   "words": "toner cartridge ink",
+   "feature": "A long, low, boxy cartridge, much wider than it is tall, with a flat top, a curved hood along its front edge and a handle grip at one end",
+   "status": "approved",
+   "approved": "2026-11-07",
+   "added": "x0.0.9",
+   "changed": "x0.0.9",
    "licence": "MIT"
   },
   {

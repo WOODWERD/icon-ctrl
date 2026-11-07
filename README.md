@@ -1,8 +1,8 @@
 # Icon Ctrl
 
-Icons for tools and shop things, drawn to read on a label. 155 solid silhouettes, from circular saws and drill bits to pliers, clamps, a soldering iron, a breadboard, a ream of paper, keys and a work van, each on a 24 × 24 box and tested at label sizes down to 10 mm.
+Icons for tools and shop things, drawn to read on a label. 159 solid silhouettes, from circular saws and drill bits to pliers, clamps, a soldering iron, a breadboard, a ream of paper, keys and a work van, each on a 24 × 24 box and tested at label sizes down to 10 mm.
 
-Part of the WOODWERD Toolkit. Status: x0.0.8, public beta.
+Part of the WOODWERD Toolkit. Status: x0.0.9, public beta.
 
 **Browse the icons:** [woodwerd.github.io/icon-ctrl](https://woodwerd.github.io/icon-ctrl/). Search them, see each one at label size beside its family, and download it. To ask for a new one, use [Request an icon](https://github.com/WOODWERD/icon-ctrl/issues/new?template=request-an-icon.yml).
 

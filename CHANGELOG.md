@@ -2,6 +2,10 @@
 
 What changed in each version of Icon Ctrl, newest first. Versions are x-numbers while Icon Ctrl is a public beta.
 
+## x0.0.9 · 2026-11-07
+- Four printing icons in Desk: Printer (`printer`), Label printer (`label-printer`), 3D printer (`3d-printer`) and Toner cartridge (`toner-cartridge`). Each is drawn from the common shape of four makers' versions.
+- The set now has 159 icons. No icons changed or withdrawn.
+
 ## x0.0.8 · 2026-11-06
 - Four new variants. Tape gains Electrical tape (`tape-electrical`) and Double-sided tape (`tape-double-sided`). Screw gains Machine screw (`screw-machine`) and Self-drilling screw (`screw-self-drilling`).
 - Duct tape, lag screws and drywall screws looked too much like their family at label size, so `tape-duct`, `screw-lag` and `screw-drywall` fall back to Tape and Screw, and searching "duct", "lag" or "drywall" finds them.
