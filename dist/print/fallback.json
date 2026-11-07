@@ -29,5 +29,6 @@
  "hammer-mallet": "hammer",
  "clamp-quick": "clamp",
  "handsaw-pull": "handsaw",
- "joiner-large": "joiner"
+ "joiner-large": "joiner",
+ "filament-reel": "filament-spool"
 }

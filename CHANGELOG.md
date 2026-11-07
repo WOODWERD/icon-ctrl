@@ -2,6 +2,13 @@
 
 What changed in each version of Icon Ctrl, newest first. Versions are x-numbers while Icon Ctrl is a public beta.
 
+## x0.0.7 · 2026-11-06
+- The first Simple icons: everyday things whose shape is the same from every maker, drawn from a written description in the set's style instead of from makers' photos. The notice says so.
+- Desk gains Paper (`paper`), Notebook (`notebook`), Envelope (`envelope`), Sticky notes (`sticky-notes`), Paper clip (`paper-clip`), Binder (`binder`), Label roll (`label-roll`) and Ink bottle (`ink-bottle`).
+- A new Everyday group with Keys (`keys`), Wallet (`wallet`), Card (`credit-card`) and Toothpicks (`toothpicks`).
+- Also new: Cardboard box (`cardboard-box`) in Kits, Filament spool (`filament-spool`) in Consumables and Battery cell (`cell-battery`) in Electronics. `filament-reel` falls back to the filament spool.
+- The set now has 151 icons. No icons changed or withdrawn.
+
 ## x0.0.6 · 2026-11-06
 - Added Helping hands (`helping-hands`) to Electronics: a weighted base with four flexible arms whose clips meet over the middle.
 - The set now has 136 icons. No icons changed or withdrawn.

@@ -22,7 +22,7 @@ from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GROUPS = ['Power, cutting', 'Power, shaping', 'Power, drill and drive', 'Shop and site', 'Plumbing and electrical',
-          'Test and measure', 'Electronics', 'Desk', 'Outdoor', 'Hand tools', 'Consumables', 'Kits', 'Shop places']
+          'Test and measure', 'Electronics', 'Desk', 'Everyday', 'Outdoor', 'Hand tools', 'Consumables', 'Kits', 'Shop places']
 TRADEMARKS = {'domino', 'rotex', 'systainer', 'sortainer', 'packout', 'tstak', 'quick-grip'}
 PNGS = [('22.7mm-300dpi', 268, False), ('10mm-300dpi', 118, False), ('10mm-203dpi', 80, True)]
 NOTICE = open(os.path.join(ROOT, 'NOTICE.md')).read().split('\n', 2)[2].strip()
@@ -127,6 +127,11 @@ def main(version):
                             status='approved', approved=r.get('approved'), added=was.get('added', version), changed=changed, licence='MIT'))
     json.dump(dict(version=version, icons=records), open(os.path.join(ROOT, 'print/icons.json'), 'w'), indent=1)
     fallback = {k: i['family'] for k, i in icons.items() if i['family'] != k and i['family'] in icons}
+    # A key merged into its family before release has no icon of its own; apps asking for it get the family (IC-R21, IC-R22).
+    for p in plan:
+        rp = os.path.join(ROOT, 'print/results', p['key'] + '.json')
+        if os.path.exists(rp) and json.load(open(rp)).get('status') == 'merged' and p['family'] in icons:
+            fallback[p['key']] = p['family']
     json.dump(fallback, open(os.path.join(dist, 'fallback.json'), 'w'), indent=1)
     groups = [(g, [k for k, i in icons.items() if i['group'] == g]) for g in GROUPS]
     rows = ',\n'.join(f"  {json.dumps(k)}: {json.dumps(dict(key=k, name=i['name'], d='', f=i['f'], family=i['family'], words=i['words'], rot=0))}"

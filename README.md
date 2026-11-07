@@ -1,8 +1,8 @@
 # Icon Ctrl
 
-Icons for tools and shop things, drawn to read on a label. 136 solid silhouettes, from circular saws and drill bits to pliers, clamps, a soldering iron, helping hands, a breadboard and a work van, each on a 24 × 24 box and tested at label sizes down to 10 mm.
+Icons for tools and shop things, drawn to read on a label. 151 solid silhouettes, from circular saws and drill bits to pliers, clamps, a soldering iron, a breadboard, a ream of paper, keys and a work van, each on a 24 × 24 box and tested at label sizes down to 10 mm.
 
-Part of the WOODWERD Toolkit. Status: x0.0.6, public beta.
+Part of the WOODWERD Toolkit. Status: x0.0.7, public beta.
 
 **Browse the icons:** [woodwerd.github.io/icon-ctrl](https://woodwerd.github.io/icon-ctrl/). Search them, see each one at label size beside its family, and download it. To ask for a new one, use [Request an icon](https://github.com/WOODWERD/icon-ctrl/issues/new?template=request-an-icon.yml).
 
@@ -15,7 +15,7 @@ Part of the WOODWERD Toolkit. Status: x0.0.6, public beta.
 
 ## About these icons
 
-These are generic icons for kinds of tools and shop things. Each one was made by WOODWERD with AI help from the common shape of several makers' versions of that tool. They are not drawings of any one product. They are not matched to every product of their type, and they are not intended to represent, copy or stand in for any maker's product or design.
+These are generic icons for kinds of tools and everyday things. Most icons were made by WOODWERD with AI help from the common shape of several makers' versions of that tool. Simple everyday things, such as paper or tape, were drawn from a written description in the same style. They are not drawings of any one product. They are not matched to every product of their type, and they are not intended to represent, copy or stand in for any maker's product or design.
 
 No toolmaker made, endorsed or is affiliated with these icons. Tool, brand and product names, trademarks and product designs belong to their owners.
 
