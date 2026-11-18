@@ -2,6 +2,13 @@
 
 What changed in each version of Icon Ctrl, newest first. Versions are x-numbers while Icon Ctrl is a public beta.
 
+## x0.0.10 · 2026-11-18
+- A new Health group for a first-aid or medical box: First-aid kit (`first-aid-kit`), Bandage (`bandage`), Gauze roll (`gauze-roll`), Medical tape (`medical-tape`), Pill bottle (`pill-bottle`), Pill organizer (`pill-organizer`), Syringe (`syringe`), Tweezers (`tweezers`), Trauma shears (`trauma-shears`), Gloves (`gloves`), Face mask (`face-mask`), Cold pack (`cold-pack`), Eye dropper (`eye-dropper`), Thermometer (`thermometer`), Blood pressure monitor (`blood-pressure-monitor`), Stethoscope (`stethoscope`), Inhaler (`inhaler`) and Pulse oximeter (`pulse-oximeter`).
+- Desk gains computer things: Laptop (`laptop`), Monitor (`monitor`), Keyboard (`keyboard`), Mouse (`mouse`), Hard drive (`hard-drive`), USB stick (`usb-stick`), SD card (`sd-card`), Wi-Fi router (`wifi-router`), Phone charger (`phone-charger`) and Power strip (`power-strip`).
+- Everyday gains Phone (`phone`), Tablet (`tablet`), Headphones (`headphones`) and Remote (`remote`).
+- Battery cell gains two variants: Coin cell (`cell-battery-coin`) and 9-volt battery (`cell-battery-9v`).
+- The set now has 193 icons. No icons changed or withdrawn.
+
 ## x0.0.9 · 2026-11-07
 - Four printing icons in Desk: Printer (`printer`), Label printer (`label-printer`), 3D printer (`3d-printer`) and Toner cartridge (`toner-cartridge`). Each is drawn from the common shape of four makers' versions.
 - The set now has 159 icons. No icons changed or withdrawn.
